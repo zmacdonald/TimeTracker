@@ -9,22 +9,7 @@ namespace TimeTracker
 		public App()
 		{
 			// The root page of your application
-			var content = new ContentPage
-			{
-				Title = "TimeTracker",
-				Content = new StackLayout
-				{
-					VerticalOptions = LayoutOptions.Center,
-					Children = {
-						new Label {
-							HorizontalTextAlignment = TextAlignment.Center,
-							Text = "Welcome to Xamarin Forms!"
-						}
-					}
-				}
-			};
-
-			MainPage = new NavigationPage(content);
+			MainPage = new RootPage();
 		}
 
 		protected override void OnStart()
